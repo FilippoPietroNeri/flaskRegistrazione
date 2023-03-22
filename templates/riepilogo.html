@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Profilo - {{username}}</title>
+</head>
+
+<body>
+    <h1>Profilo di {{username}}</h1>
+    <div class="well">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane active in" id="home">
+                <form id="tab">
+                    <label>Username</label>
+                    <input type="text" value="{{username}}" class="input-xlarge" disabled>
+                    <label>Nome</label>
+                    <input type="text" value="{{nome}}" class="input-xlarge" disabled>
+                    <label>Cognome</label>
+                    <input type="text" value="{{cognome}}" class="input-xlarge" disabled>
+                    <label>Email</label>
+                    <input type="text" value="{{email}}" class="input-xlarge" disabled>
+                    <label>Data di Nascita</label>
+                    <input type="date" value="{{datanascita}}" class="input-xlarge" disabled>
+                    <label>Nazione di Nascita</label>
+                    <input type="text" value="{{nazione}}" class="input-xlarge" disabled>
+                    <label>Password</label>
+                    <input type="password" value="{{password}}" class="input-xlarge" disabled>
+                    <label>Lingue</label>
+                    <ul>
+                        {%for lang in lingua %}
+                            <li>{{lang}}</li>
+                        {%endfor%}
+                    </ul>
+                    <label>Consenso all'invio di informazione pubblicitaria</label>
+                    <input type="text" value="{{consenso_informazione.upper()}}" disabled>
+                </form>
+            </div>
+        </div>
+    </div> 
+</body>
+
+</html>

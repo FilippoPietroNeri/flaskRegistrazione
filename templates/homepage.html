@@ -8,105 +8,112 @@
         id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <title>Homepage</title>
+    <title>Registrazione</title>
 </head>
 
 <body>
-    <h1>Registrazione Servizio Online</h1>
-    <form class="form-horizontal" action='/register' method="POST">
-        <fieldset>
-            <div class="control-group">
-                <label class="control-label" for="text">Il tuo nome</label>
-                <div class="controls">
-                    <input type="text" id="nome" name="nome" placeholder="" class="input-xlarge" required>
-                    <p class="help-block">Inserisci il tuo nome reale</p>
+    <div>
+        <h1>Registrazione Servizio Online</h1>
+        <p>I campi con * sono OBBLIGATORI</p>
+        <br>
+        <form class="form-horizontal" action='/profile' method="POST">
+            <fieldset>
+                <div class="control-group">
+                    <label class="control-label" for="text">Il tuo nome *</label>
+                    <div class="controls">
+                        <input type="text" id="nome" name="nome" placeholder="" class="input-xlarge" required>
+                        <p class="help-block">Inserisci il tuo nome reale</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="control-group">
-                <label class="control-label" for="text">Il tuo cognome</label>
-                <div class="controls">
-                    <input type="text" id="cognome" name="cognome" placeholder="" class="input-xlarge" required>
-                    <p class="help-block">Inserisci il tuo cognome reale</p>
+                <div class="control-group">
+                    <label class="control-label" for="text">Il tuo cognome *</label>
+                    <div class="controls">
+                        <input type="text" id="cognome" name="cognome" placeholder="" class="input-xlarge" required>
+                        <p class="help-block">Inserisci il tuo cognome reale</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="control-group">
-                <label class="control-label" for="data">Data di Nascita</label>
-                <div class="controls">
-                    <input type="date" id="datanascita" name="datanascita" placeholder="" class="input-xlarge" required>
-                    <p class="help-block">Inserisci la tua data di nascita</p>
+                <div class="control-group">
+                    <label class="control-label" for="data">Data di Nascita</label>
+                    <div class="controls">
+                        <input type="date" id="datanascita" name="datanascita" placeholder="" class="input-xlarge">
+                        <p class="help-block">Inserisci la tua data di nascita</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="control-group">
-                <label class="control-label" for="select">Nazione di Nascita</label>
-                <div class="controls">
-                    <select name="nazione">
-                        <option value="Italia">Italia</option>
-                        <option value="Germania">Germania</option>
-                        <option value="Francia">Francia</option>
-                    </select>
-                    <p class="help-block">Inserisci la tua nazione di nascita</p>
+                <div class="control-group">
+                    <label class="control-label" for="select">Nazione di Nascita</label>
+                    <div class="controls">
+                        <select name="nazione">
+                            <option value="Italia">Italia</option>
+                            <option value="Germania">Germania</option>
+                            <option value="Francia">Francia</option>
+                        </select>
+                        <p class="help-block">Inserisci la tua nazione di nascita</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="control-group">
-                <label class="control-label" for="username">Username</label>
-                <div class="controls">
-                    <input type="text" id="username" name="username" placeholder="" class="input-xlarge" required>
-                    <p class="help-block">Inserisci un username valido</p>
+                <div class="control-group">
+                    <label class="control-label" for="username">Username *</label>
+                    <div class="controls">
+                        <input type="text" id="username" name="username" placeholder="" class="input-xlarge" required>
+                        <p class="help-block">Inserisci un username valido</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="control-group">
-                <label class="control-label" for="password">Password</label>
-                <div class="controls">
-                    <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-                    <p class="help-block">Inserisci una password valida.</p>
+                <div class="control-group">
+                    <label class="control-label" for="password">Password *</label>
+                    <div class="controls">
+                        <input type="password" id="password" name="password" placeholder="" class="input-xlarge"
+                            required>
+                        <p class="help-block">Inserisci una password valida.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="control-group">
-                <label class="control-label" for="password_confirm">Password (Conferma)</label>
-                <div class="controls">
-                    <input type="password" id="password_confirm" name="password_confirm" placeholder=""
-                        class="input-xlarge">
-                    <p class="help-block">Conferma la password precedentemente digitata</p>
+                <div class="control-group">
+                    <label class="control-label" for="password_confirm">Password (Conferma) *</label>
+                    <div class="controls">
+                        <input type="password" id="password_confirm" name="password_confirm" placeholder=""
+                            class="input-xlarge" required>
+                        <p class="help-block">Conferma la password precedentemente digitata</p>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="control-group">
-                <label class="control-label" for="email">E-mail</label>
-                <div class="controls">
-                    <input type="email" id="email" name="email" placeholder="" class="input-xlarge">
-                    <p class="help-block">Inserisci la tua email</p>
+                <div class="control-group">
+                    <label class="control-label" for="email">E-mail *</label>
+                    <div class="controls">
+                        <input type="email" id="email" name="email" placeholder="" class="input-xlarge" required>
+                        <p class="help-block">Inserisci la tua email</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="control-group">
-                <label class="control-label" for="checkbox">Lingue che conosci</label>
-                <div class="controls">
-                    <input type='checkbox' name='lingua' value='Italiano' class="input-xlarge"> Italiano <br>
-                    <input type='checkbox' name='lingua' value='Inglese' class="input-xlarge"> Inglese <br>
-                    <input type='checkbox' name='lingua' value='Giapponese' class="input-xlarge"> Giapponese <br>
-                    <p class="help-block">Inserisci le lingue che conosci</p>
+                <div class="control-group">
+                    <label class="control-label" for="checkbox">Lingue che conosci</label>
+                    <div class="controls">
+                        <input type='checkbox' name='lingua' value='Italiano' class="input-xlarge"> Italiano <br>
+                        <input type='checkbox' name='lingua' value='Inglese' class="input-xlarge"> Inglese <br>
+                        <input type='checkbox' name='lingua' value='Giapponese' class="input-xlarge"> Giapponese <br>
+                        <p class="help-block">Inserisci le lingue che conosci</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="control-group">
-                <div class="controls">
-                    <input type='checkbox' name='consenso_informazione' value='ok' class="input-xlarge"> Consenso all'invio di informazione pubblicitaria <br>
+                <div class="control-group">
+                    <div class="controls">
+                        Consenso all'invio di informazione pubblicitaria <br>
+                        <input type='radio' name='consenso_informazione' value='Si' class="input-xlarge"> Si <br>
+                        <input type='radio' name='consenso_informazione' value='No' class="input-xlarge"> No <br>
+                    </div>
                 </div>
-            </div>
-            <div class="control-group">
-                <div class="controls">
-                    <button type="submit" class="btn btn-success">Registrati</button>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-success">Registrati</button>
+                    </div>
                 </div>
-            </div>
-        </fieldset>
-    </form>
+            </fieldset>
+        </form>
+    </div>
 </body>
 
 </html>
